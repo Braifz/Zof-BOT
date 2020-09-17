@@ -3,7 +3,7 @@ const config = require("./config.json");
 
 const client = new Discord.Client();
 
-const prefix = "%";
+const prefix = "¿";
 
 
 client.on("message", function(message) {
@@ -19,7 +19,7 @@ client.on("message", function(message) {
   } else if (command === 'chau') {
     message.reply('Hasta luego!');
   } else if (command === `server`) {
-    message.reply(`This server's name is: ${message.guild.name}`);
+    message.reply(`Total members: ${message.guild.memberCount}`);
   }
 
   

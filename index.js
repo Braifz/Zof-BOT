@@ -17,6 +17,8 @@ client.on("message", function(message) {
     message.reply('Hola!...Solo soy un bot que saluda hasta el momento! Proximamente haré mas cosas :)');
   } else if (command === 'chau') {
     message.reply('Hasta luego!');
+  } else if (command === `server`) {
+    message.reply(`This server's name is: ${message.guild.name}`);
   }
 
   
